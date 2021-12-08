@@ -1,0 +1,113 @@
+/* Resets varying browser styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Layout Elements */
+
+body {
+  background-color: #e6e6e6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: cornflowerblue;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  color: white;
+  height: 56px;
+  padding: 0 1rem;
+}
+
+main {
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+aside {
+  background-color: white;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  height: calc(100vh - 56px);
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 56px;
+  width: 256px;
+}
+
+/* Flex Direction */
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Justify Classes */
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Card element */
+.card {
+  background-color: #ffffff;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+/* Sizing */
+.full-width {
+  width: 100%;
+}
+
+/* Typography */
+.bold {
+  font-weight: bold;
+}
+
+/* Shadow */
+.shadow {
+  box-shadow: 0 1px 3px #0003, 0 1px 1px #00000024, 0 2px 1px -1px #0000001f;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
