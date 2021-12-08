@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Title</title>
+    <title>Dice Roller</title>
     <link rel="stylesheet" href="style/style.css">
     <!-- Font Awesome (Icons Library) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -19,8 +19,17 @@
     <aside id="menu" class="hidden animate__animated animate__fadeInLeft animate__faster"></aside>
     
     <main>
-        <section class="card shadow">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor velit eum voluptatibus magnam atque magni praesentium consequatur vel quidem! Cum necessitatibus maxime expedita asperiores sapiente fuga doloremque eius minus blanditiis.</p>
+        <section class="column card shadow align-start">
+            <div class="row"><button onclick="rollDice(2)" class="dice-button">roll a d2</button><div id="d2"></div></div>
+            <div class="row"><button onclick="rollDice(4)" class="dice-button">roll a d4</button><div id="d4"></div></div>
+            <div class="row"><button onclick="rollDice(6)" class="dice-button">roll a d6</button><div id="d6"></div></div>
+            <div class="row"><button onclick="rollDice(8)" class="dice-button">roll a d8</button><div id="d8"></div></div>
+            <div class="row"><button onclick="rollDice(10)" class="dice-button">roll a d10</button><div id="d10"></div></div>
+            <div class="row"><button onclick="rollDice(12)" class="dice-button">roll a d12</button><div id="d12"></div></div>
+            <div class="row"><button onclick="rollDice(20)" class="dice-button">roll a d20</button><div id="d20"></div></div>
+            <div class="row"><button onclick="rollDice(100)" class="dice-button">roll a d100</button><div id="d100"></div</div>
+            
+             
         </section>
     </main>
 
